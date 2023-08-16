@@ -38,9 +38,9 @@ dependencies:
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
-  tailwindcss-animated:
-    specifier: ^1.0.1
-    version: 1.0.1(tailwindcss@3.3.3)
+  taos:
+    specifier: ^1.0.5
+    version: 1.0.5
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -2398,14 +2398,6 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /tailwindcss-animated@1.0.1(tailwindcss@3.3.3):
-    resolution: {integrity: sha512-u5wusj89ZwP8I+s8WZlaAd7aZTWBN/XEG6QgMKpkIKmAf3xP1A6WYf7oYIKmGaB10UAQaSqWopi/i1ozzZEs8Q==}
-    peerDependencies:
-      tailwindcss: '>=3.1.0'
-    dependencies:
-      tailwindcss: 3.3.3
-    dev: false
-
   /tailwindcss@3.3.3:
     resolution: {integrity: sha512-A0KgSkef7eE4Mf+nKJ83i75TMyq8HqY3qmFIJSWy8bNt0v1lG7jUcpGpoTFxAwYcWOphcTBLPPJg+bDfhDf52w==}
     engines: {node: '>=14.0.0'}
@@ -2435,6 +2427,10 @@ packages:
       sucrase: 3.34.0
     transitivePeerDependencies:
       - ts-node
+    dev: false
+
+  /taos@1.0.5:
+    resolution: {integrity: sha512-JSwR+ldec2dSjOnssN/VGjXSR44DbzUVeAXRDVEuMsc7xndx8ePcQ4QMAMUAL5V4KN1wlmhumyQ7aSykDf8uhw==}
     dev: false
 
   /tapable@2.2.1:

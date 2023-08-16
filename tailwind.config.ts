@@ -134,6 +134,6 @@ const config: Config = {
       inter: ['var(--font-inter)', ...fontFamily.sans],
     },
   },
-  plugins: [],
+  plugins: [require('taos/plugin')],
 }
 export default config
