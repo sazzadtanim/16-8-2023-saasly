@@ -15,8 +15,6 @@ const Feature = (props: {} & React.ComponentProps<'div'>) => (
             width={32}
             height={32}
             className='aspect-auto'
-            placeholder='blur'
-            blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=='
           />
         </div>
         <div className='headline mt-6'>
