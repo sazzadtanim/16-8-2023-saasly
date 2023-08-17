@@ -6,15 +6,14 @@ import DynamicButton from '../dynamic/DynamicButton'
 
 export default function Hero() {
   return (
-    <div className='mx-auto my-20 w-full max-w-[1100px]'>
-      <h1 className='mx-auto max-w-[759px] text-center text-desktopH2 font-bold text-white'>
+    <section className='mx-auto my-20 w-full max-w-[1100px]'>
+      <h1 className='mx-auto max-w-[759px] text-center font-headerFont text-desktopH2 font-bold text-white'>
         Advanced analytics to grow
         <br />
         your business
       </h1>
-      <p className='font-lg mx-auto my-6  max-w-[462px] text-center text-neutral-50'>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam ut id nisl
-        tellus rhoncus, imperdiet
+      <p className='mx-auto my-6 max-w-[462px]  text-center font-subHeaderFont text-desktopH4 leading-6 text-neutral-50'>
+        Unlocking Insights for Strategic Expansion
       </p>
 
       <div className='mx-auto my-12 flex items-center justify-center gap-4'>
@@ -34,7 +33,7 @@ export default function Hero() {
         />
       </div>
 
-      <div className='my-4 grid grid-flow-col items-center justify-between rounded-xl px-2 shadow-lg drop-shadow-md'>
+      <div className='my-4 grid grid-flow-col items-center justify-between divide-x-2 divide-red-800 rounded-xl px-2 shadow-lg drop-shadow-md '>
         {[...Array(5)].map((icon, index) => (
           <Image
             key={index}
@@ -48,6 +47,6 @@ export default function Hero() {
           />
         ))}
       </div>
-    </div>
+    </section>
   )
 }

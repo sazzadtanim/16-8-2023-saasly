@@ -2,13 +2,13 @@ import Feature from './Feature'
 
 export default function Features() {
   return (
-    <div className='mx-auto mt-40 max-w-[1100px]'>
-      <h2 className='text-desktopH2 text-deepBlue-600 mx-auto my-20 text-center font-bold'>
+    <section className='mx-auto mt-40 max-w-[1100px]'>
+      <h2 className='mx-auto my-20 text-center text-desktopH2 font-bold text-deepBlue-600'>
         We make it easy to track all <br />
         data analytics
       </h2>
-      <section>
-        {[1, 2, 3].map((item,index) => (
+      <div>
+        {[1, 2, 3].map((item, index) => (
           <Feature
             key={index}
             className={`flex justify-between ${
@@ -16,7 +16,7 @@ export default function Features() {
             }`}
           />
         ))}
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }

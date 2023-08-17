@@ -1,5 +1,7 @@
+'use client'
 import Illustration from '@/svg/Illustration.svg'
 import stackLogo from '@/svg/stack-logo.svg'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
 import DynamicButton from '../dynamic/DynamicButton'
 
@@ -7,9 +9,9 @@ export default function WhyUs() {
   return (
     <section>
       <div className='mx-auto flex max-w-[1100px] flex-col items-center'>
-        <h2 className='mx-auto text-center text-desktopH2 font-bold text-deepBlue-600'>
+        <motion.h2 className='mx-auto text-center text-desktopH2 font-bold text-deepBlue-600'>
           We optimize marketing for <br /> business continuity
-        </h2>
+        </motion.h2>
 
         <div className='flex'>
           <div className='flex flex-col gap-16'>

@@ -1,7 +1,7 @@
 import DynamicCard from '../dynamic/DynamicCard'
 
 const RR = () => (
-  <div className='bg-background-rr bg-contain bg-center bg-no-repeat'>
+  <section className='bg-background-rr bg-contain bg-center bg-no-repeat'>
     <div className='py-72'>
       <h2 className='mb-16 text-center text-desktopH2 text-white'>
         Integrated with Social Media
@@ -12,7 +12,7 @@ const RR = () => (
         <DynamicCard company='twitter' />
       </div>
     </div>
-  </div>
+  </section>
 )
 
 export default RR

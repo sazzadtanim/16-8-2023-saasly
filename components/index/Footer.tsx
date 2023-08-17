@@ -8,7 +8,7 @@ import CTA from './CTA'
 
 export default function Footer() {
   return (
-    <div className='bg-footer-bg bg-cover bg-bottom bg-no-repeat pt-20'>
+    <footer className='bg-footer-bg bg-cover bg-bottom bg-no-repeat pt-20'>
       <CTA />
       <div className='mx-auto flex max-w-screen-mobile items-center justify-center pb-36 pt-36'>
         <div className='footer flex items-center justify-between gap-36 text-white '>
@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
       </div>
       {FooterLastPart}
-    </div>
+    </footer>
   )
 }
 
