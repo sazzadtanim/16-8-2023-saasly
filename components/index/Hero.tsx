@@ -7,7 +7,7 @@ import DynamicButton from '../dynamic/DynamicButton'
 export default function Hero() {
   return (
     <div className='mx-auto my-20 w-full max-w-[1100px]'>
-      <h1 className='text-desktopH2 mx-auto max-w-[759px] text-center font-bold text-white'>
+      <h1 className='mx-auto max-w-[759px] text-center text-desktopH2 font-bold text-white'>
         Advanced analytics to grow
         <br />
         your business
@@ -29,12 +29,12 @@ export default function Hero() {
           width={1215}
           height={895}
           placeholder='blur'
-          blurDataURL='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=='
-          className='aspect-auto rounded-lg bg-white/10'
+          blurDataURL='data:image/png;base64,L7QcxQ0600~TERM|n#t600~k9w0O'
+          className='aspect-auto rounded-lg bg-white/10 drop-shadow-2xl'
         />
       </div>
 
-      <div className='my-4 grid grid-flow-col items-center justify-between rounded-xl px-2 shadow-lg drop-shadow-xl'>
+      <div className='my-4 grid grid-flow-col items-center justify-between rounded-xl px-2 shadow-lg drop-shadow-md'>
         {[...Array(5)].map((icon, index) => (
           <Image
             key={index}

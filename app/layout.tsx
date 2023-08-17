@@ -23,9 +23,9 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body
-        className={`${inter.variable} ${dmsans.variable} bg-test w-full bg-top bg-no-repeat object-fill font-sans`}
+        className={`${inter.variable} ${dmsans.variable} font-sans w-full bg-white bg-test bg-top bg-no-repeat object-fill`}
       >
-        <Navigation/>
+        <Navigation />
         {children}
       </body>
     </html>

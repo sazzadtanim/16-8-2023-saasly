@@ -1,12 +1,12 @@
-import DynamicCard from '../DynamicCard'
+import DynamicCard from '../dynamic/DynamicCard'
 
 const RR = () => (
   <div className='bg-background-rr bg-contain bg-center bg-no-repeat'>
     <div className='py-72'>
-      <h2 className='text-desktopH2 mb-16 text-center text-white'>
+      <h2 className='mb-16 text-center text-desktopH2 text-white'>
         Integrated with Social Media
       </h2>
-      <div className='cardlisting mobile:flex-row flex flex-col items-center justify-center gap-6'>
+      <div className='cardlisting flex flex-col items-center justify-center gap-6 mobile:flex-row'>
         <DynamicCard company='facebook' />
         <DynamicCard company='google' />
         <DynamicCard company='twitter' />

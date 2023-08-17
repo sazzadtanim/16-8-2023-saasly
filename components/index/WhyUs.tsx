@@ -7,16 +7,16 @@ export default function WhyUs() {
   return (
     <section>
       <div className='mx-auto flex max-w-[1100px] flex-col items-center'>
-        <h2 className='text-desktopH2 text-deepBlue-600 mx-auto text-center font-bold'>
+        <h2 className='mx-auto text-center text-desktopH2 font-bold text-deepBlue-600'>
           We optimize marketing for <br /> business continuity
         </h2>
 
         <div className='flex'>
           <div className='flex flex-col gap-16'>
-            {[...Array(2)].map(item => (
-              <div className='category_card' key={item}>
+            {[...Array(2)].map((item, index) => (
+              <div className='category_card' key={index}>
                 <div>
-                  <div className='bg-gradient-deepBlue inline-block rounded p-4'>
+                  <div className='inline-block rounded bg-gradient-deepBlue p-4'>
                     <Image
                       src={stackLogo}
                       alt='dashboard image'
@@ -28,10 +28,10 @@ export default function WhyUs() {
                     />
                   </div>
                   <div className='text mb-9 mt-6 max-w-[226px]'>
-                    <h4 className='text-desktopH4 max-w-[159px] font-bold text-blue-500'>
+                    <h4 className='max-w-[159px] text-desktopH4 font-bold text-blue-500'>
                       Accurate Data Science
                     </h4>
-                    <p className='text-md mt-3 text-neutral-500 antialiased'>
+                    <p className='mt-3 text-md text-neutral-500 antialiased'>
                       Cum sociis natoque penatibus et magnis dis parturient
                     </p>
                   </div>
@@ -52,10 +52,10 @@ export default function WhyUs() {
           </div>
 
           <div className='flex flex-col items-center gap-16'>
-            {[1, 2].map(item => (
-              <div className='category_card' key={item}>
+            {[1, 2].map((item, index) => (
+              <div className='category_card' key={index}>
                 <div>
-                  <div className='bg-gradient-deepBlue inline-block rounded p-4'>
+                  <div className='inline-block rounded bg-gradient-deepBlue p-4'>
                     <Image
                       src={stackLogo}
                       alt='dashboard image'
@@ -67,10 +67,10 @@ export default function WhyUs() {
                     />
                   </div>
                   <div className='text mb-9 mt-6 max-w-[226px]'>
-                    <h4 className='text-desktopH4 max-w-[159px] font-bold text-blue-500'>
+                    <h4 className='max-w-[159px] text-desktopH4 font-bold text-blue-500'>
                       Accurate Data Science
                     </h4>
-                    <p className='text-md mt-3 text-neutral-500 antialiased'>
+                    <p className='mt-3 text-md text-neutral-500 antialiased'>
                       Cum sociis natoque penatibus et magnis dis parturient
                     </p>
                   </div>

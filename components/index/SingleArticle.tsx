@@ -1,7 +1,7 @@
 import { articles } from '@/data/articles'
 import Image from 'next/image'
-import DynamicLabel from '../DynamicLabel'
 import DynamicButton from '../dynamic/DynamicButton'
+import DynamicLabel from '../dynamic/DynamicLabel'
 
 export default function SingleArticle() {
   return (
@@ -14,8 +14,8 @@ export default function SingleArticle() {
           >
             <div>
               <Image
-                src={`/assets/png/article-${item.id}.png`}
-                alt={`article ${item.id} image`}
+                src={item.imageUrl}
+                alt={``}
                 width={351}
                 height={196}
                 placeholder='blur'
@@ -30,7 +30,7 @@ export default function SingleArticle() {
               />
             </div>
             <div>
-              <h4 className='text-desktopH4 flex flex-col gap-3 font-bold text-blue-600 '>
+              <h4 className='flex flex-col gap-3 text-desktopH4 font-bold text-blue-600 '>
                 {item.heading}
               </h4>
               <p>{item.paragraph}</p>

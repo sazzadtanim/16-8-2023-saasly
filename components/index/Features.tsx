@@ -8,9 +8,9 @@ export default function Features() {
         data analytics
       </h2>
       <section>
-        {[1, 2, 3].map(item => (
+        {[1, 2, 3].map((item,index) => (
           <Feature
-            key={item}
+            key={index}
             className={`flex justify-between ${
               item == 2 && 'flex-row-reverse'
             }`}

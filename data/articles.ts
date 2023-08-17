@@ -1,3 +1,7 @@
+import article1 from '@/png/article-1.png'
+import article2 from '@/png/article-2.png'
+import article3 from '@/png/article-3.png'
+
 export const articles = [
   {
     id: 1,
@@ -6,6 +10,7 @@ export const articles = [
     paragraph:
       'Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas..',
     labelColor: 'Orange',
+    imageUrl: article1,
   },
   {
     id: 2,
@@ -14,6 +19,7 @@ export const articles = [
     paragraph:
       'Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas..',
     labelColor: 'Blue',
+    imageUrl: article2,
   },
   {
     id: 3,
@@ -22,5 +28,6 @@ export const articles = [
     paragraph:
       'Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas..',
     labelColor: 'Green',
+    imageUrl: article3,
   },
 ]

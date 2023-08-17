@@ -1,6 +1,7 @@
 import Facebook from '@/svg/facebook.svg'
-import Google from '@/svg/google.svg'
-import Twitter from '@/svg/twitter.svg'
+import google from '@/svg/google.svg'
+import twitter from '@/svg/twitter.svg'
+import Image from 'next/image'
 import DynamicButton from './DynamicButton'
 
 export default function DynamicCard(props: {
@@ -12,16 +13,16 @@ export default function DynamicCard(props: {
     rounded bg-white ring-2
       `}
     >
-      <div className='bg-card-background flex flex-col items-center gap-12 rounded bg-no-repeat object-fill p-6'>
+      <div className='flex flex-col items-center gap-12 rounded bg-card-background bg-no-repeat object-fill p-6'>
         <div className='flex flex-col items-center justify-center gap-6'>
-          {props.company === 'facebook' ? <Facebook /> : ''}
-          {props.company === 'google' ? <Google /> : ''}
-          {props.company === 'twitter' ? <Twitter /> : ''}
+          {props.company === 'facebook' && <Image alt='' src={Facebook} />}
+          {props.company === 'google' && <Image alt='' src={google} />}
+          {props.company === 'twitter' && <Image alt='' src={twitter} />}-
           <div>
-            <h4 className='text-desktopH4 mb-3 text-center capitalize text-blue-500'>
+            <h4 className='mb-3 text-center text-desktopH4 capitalize text-blue-500'>
               {props.company}
             </h4>
-            <p className='text-md max-w-[236px] text-center text-neutral-500'>
+            <p className='max-w-[236px] text-center text-md text-neutral-500'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
               risus dui faucibus eu.
             </p>
