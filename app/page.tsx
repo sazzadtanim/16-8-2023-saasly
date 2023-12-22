@@ -7,7 +7,7 @@ import WhyUs from '@/components/index/WhyUs'
 
 export default function Home() {
   return (
-    <main className='font-dmSans mx-auto text-5xl'>
+    <main className='font-dmSans text-5xl mx-auto'>
       <Hero />
       <WhyUs />
       <Features />
